@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Get Quote</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    
+  }
+
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  p {
+ 
+    margin-left: 8%;
+  }
+  h1, h2{
+	  text-align: center;
+  }
+
+  label {
+    font-size: 14px;
+
+  }
+  .labelGroup {
+    
+    margin-left: 8%;
+  }
+
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 8%;
+    
+  }
+
+  input[type="radio"] {
+    margin-right: 10px;
+    margin-left: 8%;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 40%;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<form action="QuoteCalculator" method="post">
+  <h1>Welcome To Socket Machine Ltd.</h1>
+  <h2>Get a Free Quote!!</h2>
+  <p>Select a Type</p>
+  <input type="radio" id="typeA" name="SocketType" value="Type A">
+  <label for="typeA">Type A</label><br>
+  <input type="radio" id="typeB" name="SocketType" value="Type B">
+  <label for="typeB">Type B</label><br>
+  <input type="radio" id="typeC" name="SocketType" value="Type C">
+  <label for="typeC">Type C</label><br><br>
+
+  <label class="labelGroup" for="quantity">Quantity:</label><br>
+  <input type="text" id="quantity" name="quantity"><br>
+
+  <label class="labelGroup" for="cname">Customer Name:</label>
+  <input type="text" id="cname" name="cname"><br>
+
+  <label class="labelGroup" for="cemail">Customer Email:</label>
+  <input type="text" id="cemail" name="cemail"><br><br>
+
+  <input type="submit" value="Request Quote">
+</form>
+
+</body>
+</html>
